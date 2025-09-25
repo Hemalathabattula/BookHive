@@ -21,11 +21,11 @@ export default function Home() {
         <FictionProducts />
 <div className="my-12 flex justify-center">
   <div className="flex flex-col items-center">
-    <img src="/images/mini-banner1.png" alt="Homepage Banner" className="w-150 h-100 rounded-lg " />
+    <Image src="/images/mini-banner1.png" alt="Homepage Banner" width={600} height={400} className="w-150 h-100 rounded-lg " />
     <a href="/about" className="text-purple-700 mt-2">know more</a>
   </div>
   <div>
-    <img src="/images/min-banner2.png" alt="Homepage Banner" className="w-160 h-100 rounded-lg shadow-md ml-4" />
+    <Image src="/images/min-banner2.png" alt="Homepage Banner" width={640} height={400} className="w-160 h-100 rounded-lg shadow-md ml-4" />
   </div>
 </div>
        
@@ -35,7 +35,7 @@ export default function Home() {
         {/* Removed standalone FictionCategories from homepage */}
      <NonFictionProducts />
      <div className="flex justify-center">
-     <img src="/images/mini-banner3.png" alt="Homepage Banner" className="w-350 h-150 rounded-lg shadow-md my-12" />
+     <Image src="/images/mini-banner3.png" alt="Homepage Banner" width={1400} height={600} className="w-350 h-150 rounded-lg shadow-md my-12" />
       </div>
       
       <ChildrenProducts />

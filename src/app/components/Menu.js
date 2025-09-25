@@ -137,14 +137,14 @@ export function ChildrenMenu() {
         <div>
           <h3 className="font-semibold mb-2 text-[#6f11e2]">Category</h3>
           <ul className="space-y-1 text-gray-700">
-            <li>All Children's Books</li>
-            <li>Children's Fiction & True Stories</li>
-            <li>Children's Non-Fiction</li>
+            <li>All Children&apos;s Books</li>
+            <li>Children&apos;s Fiction & True Stories</li>
+            <li>Children&apos;s Non-Fiction</li>
             <li>Activity, Early Learning & Picture Books</li>
-            <li>Children's Reference Books</li>
-            <li>Children's Education & Learning</li>
-            <li>Children's Poetry & Anthologies</li>
-            <li>Children's Personal & Social Issues</li>
+            <li>Children&apos;s Reference Books</li>
+            <li>Children&apos;s Education & Learning</li>
+            <li>Children&apos;s Poetry & Anthologies</li>
+            <li>Children&apos;s Personal & Social Issues</li>
             <li>Stationary & Miscellaneous Items</li>
           </ul>
         </div>
@@ -154,10 +154,10 @@ export function ChildrenMenu() {
           <h3 className="font-semibold mb-2 text-[#6f11e2]">Special Features</h3>
           <ul className="space-y-1 text-gray-700">
             <li>🔥 New Arrivals</li>
-            <li>📚 Children's Books of the Month</li>
+            <li>📚 Children&apos;s Books of the Month</li>
             <li>🍎 Back to School</li>
-            <li>💚 Kids' Favourite Characters</li>
-            <li>💙 Kids' Favourite Series</li>
+            <li>💚 Kids&apos; Favourite Characters</li>
+            <li>💙 Kids&apos; Favourite Series</li>
           </ul>
         </div>
 
