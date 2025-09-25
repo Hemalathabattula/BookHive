@@ -1,0 +1,2 @@
+- Update mini-banner1 div className to "my-12 flex"
+- Update mini-banner2 div className to "my-12 flex"

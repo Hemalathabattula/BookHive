@@ -1,0 +1,27 @@
+import { NextResponse } from 'next/server';
+import { connectDB } from '../../../lib/mongodb';
+import User from '../../../models/user';
+
+export async function POST(request) {
+  try {
+    await connectDB();
+
+    const userEmail = request.headers.get('user-email');
+    if (!userEmail) {
+      return NextResponse.json({ error: 'User not authenticated' }, { status: 401 });
+    }
+
+    const user = await User.findOne({ email: userEmail });
+    if (!user) {
+      return NextResponse.json({ error: 'User not found' }, { status: 404 });
+    }
+
+    // Clear the basket
+    user.basket = [];
+    await user.save();
+
+    return NextResponse.json({ message: 'Checkout successful', basket: user.basket });
+  } catch (error) {
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
+  }
+}
