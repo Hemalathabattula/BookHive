@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BookHive - Online Book Marketplace
 
 BookHive is a modern web application for buying and selling second-hand books online. Built with Next.js, it provides a user-friendly platform for book enthusiasts to discover, purchase, and sell pre-loved books across various categories including fiction, non-fiction, and children's books.
@@ -157,3 +158,6 @@ If you have any questions or need help, please open an issue on GitHub or contac
 ---
 
 **BookHive** - Your feel-good place to buy and sell books online! 🌟
+=======
+# BookHive
+>>>>>>> d134d4a301fb03accc106de08e2d1b86fad8f4f2
