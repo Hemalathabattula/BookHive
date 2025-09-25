@@ -4,6 +4,8 @@ import BookCard from '../components/BookCard';
 import { books } from '../../data/books';
 import useWishlist from '../hooks/useWishlist';
 
+export const dynamic = 'force-dynamic';
+
 export default function WishlistPage() {
   const { wishlist, loading } = useWishlist();
 
@@ -13,7 +15,8 @@ export default function WishlistPage() {
     return <div className="text-center py-10">Loading...</div>;
   }
 
-  if (!localStorage.getItem('user')) {
+  const isLoggedIn = typeof window !== 'undefined' && localStorage.getItem('user');
+  if (!isLoggedIn) {
     return <div className="text-center py-10">Please log in to view your wishlist.</div>;
   }
 
