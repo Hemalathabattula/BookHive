@@ -1,6 +1,6 @@
 "use client";
 
-import Products from "./components/products";
+import Products from "./components/Products";
 import BookRecommendations from "./components/BookRecommendations";
 import FictionCategories from "./components/FictionCategories";
 import NonFictionCategories from "./components/NonFictionCategories";
